@@ -4,20 +4,18 @@ layout: default
 
 <div class="home">
 
-  <section class="home-section">
-    <h2 class="home-section-title">About</h2>
-    <p class="home-section-lead">
-      A shared personal space by Abdullah and Rahmi — for notes, projects, reflections, and ideas.
-      <a href="{{ '/about/' | relative_url }}">Read more</a>.
-    </p>
-  </section>
+  <div class="home-intro">
+    {{ content }}
+  </div>
 
-  <section class="home-section">
-    <h2 class="home-section-title">Latest posts</h2>
+  {% assign latest_posts = site.posts | slice: 0, 5 %}
+  {% for post in latest_posts %}
+    <section class="home-post">
+      <h2 class="home-post-title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h2>
 
-    {% assign latest_posts = site.posts | slice: 0, 5 %}
-    {% for post in latest_posts %}
-      <article class="post-card">
+      <div class="post-card">
         {% if post.thumb %}
           <a class="post-card-media" href="{{ post.url | relative_url }}" aria-label="{{ post.title }}">
             <img src="{{ post.thumb | relative_url }}" alt="{{ post.title }}">
@@ -25,15 +23,12 @@ layout: default
         {% endif %}
 
         <div class="post-card-body">
-          <h3 class="post-card-title">
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h3>
           <div class="post-card-excerpt">
             {{ post.excerpt }}
           </div>
         </div>
-      </article>
-    {% endfor %}
-  </section>
+      </div>
+    </section>
+  {% endfor %}
 
 </div>

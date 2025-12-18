@@ -3,51 +3,62 @@
 
 @import "minima";
 
-/* Home sections */
-.home-section { margin: 2.25rem 0; }
-.home-section-title { margin: 0 0 .6rem 0; }
-.home-section-lead { margin: 0; max-width: 75ch; }
+.home-intro {
+  margin: 2rem 0 2.25rem 0;
+  max-width: 80ch;
+}
 
-/* Latest post cards: image left, text right */
+.home-post {
+  margin: 1.75rem 0 2.25rem 0;
+}
+
+.home-post-title {
+  margin: 0 0 .75rem 0;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.home-post-title a {
+  text-decoration: none;
+}
+.home-post-title a:hover {
+  text-decoration: underline;
+}
+
 .post-card {
   display: flex;
   gap: 1.25rem;
   align-items: flex-start;
-  margin: 1.25rem 0 1.5rem 0;
 }
 
 .post-card-media {
   flex: 0 0 auto;
-  width: 34%;
-  max-width: 360px;
+  width: 38%;
+  max-width: 420px;
 }
 
 .post-card-media img {
   display: block;
   width: 100%;
-  height: auto; /* keep aspect ratio */
+  height: auto;
   border-radius: 10px;
 }
 
-/* Make sure text occupies > 50% */
 .post-card-body {
   flex: 1 1 auto;
   min-width: 0;
 }
 
-.post-card-title {
-  margin: 0 0 .4rem 0;
-  font-size: 1.2rem;
-  line-height: 1.25;
+.post-card-excerpt p {
+  margin: 0;
 }
 
-.post-card-title a { text-decoration: none; }
-.post-card-title a:hover { text-decoration: underline; }
-
-.post-card-excerpt p { margin: 0; }
-
-/* Mobile: stack */
 @media (max-width: 720px) {
-  .post-card { flex-direction: column; }
-  .post-card-media { width: 100%; max-width: none; }
+  .post-card {
+    flex-direction: column;
+  }
+  .post-card-media {
+    width: 100%;
+    max-width: none;
+  }
 }
