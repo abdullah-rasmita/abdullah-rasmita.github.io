@@ -8,7 +8,7 @@ date: 2025-12-18
 
 This is a shared personal website by Abdullah and Rahmi.
 
----
+<!--more-->
 
 ## Abdullah
 
