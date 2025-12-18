@@ -5,29 +5,32 @@ layout: default
 <div class="home">
 
   <section class="home-section">
-    <h2>About</h2>
-    <p>
-      A shared personal space by Abdullah and Rahmi —
-      for notes, projects, reflections, and ideas.
+    <h2 class="home-section-title">About</h2>
+    <p class="home-section-lead">
+      A shared personal space by Abdullah and Rahmi — for notes, projects, reflections, and ideas.
       <a href="{{ '/about/' | relative_url }}">Read more</a>.
     </p>
   </section>
 
   <section class="home-section">
-    <h2>Latest posts</h2>
+    <h2 class="home-section-title">Latest posts</h2>
 
     {% assign latest_posts = site.posts | slice: 0, 5 %}
     {% for post in latest_posts %}
       <article class="post-card">
         {% if post.thumb %}
-          <a class="post-card-media" href="{{ post.url | relative_url }}">
+          <a class="post-card-media" href="{{ post.url | relative_url }}" aria-label="{{ post.title }}">
             <img src="{{ post.thumb | relative_url }}" alt="{{ post.title }}">
           </a>
         {% endif %}
 
         <div class="post-card-body">
-          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-          {{ post.excerpt }}
+          <h3 class="post-card-title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h3>
+          <div class="post-card-excerpt">
+            {{ post.excerpt }}
+          </div>
         </div>
       </article>
     {% endfor %}
