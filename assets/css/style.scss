@@ -1,0 +1,32 @@
+---
+---
+@import "minima";
+
+.post-card {
+  display: flex;
+  gap: 1.25rem;
+  margin: 1.25rem 0;
+}
+
+.post-card-media {
+  max-width: 38%;
+}
+
+.post-card-media img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.post-card-body {
+  flex: 1;
+}
+
+@media (max-width: 720px) {
+  .post-card {
+    flex-direction: column;
+  }
+  .post-card-media {
+    max-width: 100%;
+  }
+}

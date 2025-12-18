@@ -8,18 +8,14 @@ permalink: /about/
 
 ## Abdullah
 
-I enjoy understanding how things work — from physical systems and technology to ideas and processes behind them. My background is in engineering and physics, but my interests remain broad and exploratory.
+I enjoy understanding how things work — from physical systems and technology to ideas and processes behind them.
 
-I often work with experiments, data analysis, models, and simulations, connecting abstract ideas with practical observation and implementation.
-
-This site is a personal space for projects, notes, and reflections, free to evolve over time.
+I often work with experiments, data analysis, models, and simulations, connecting abstract ideas with practical observation.
 
 ---
 
 ## Rahmi
 
-Rahmi is interested in people and how they grow, with particular curiosity about history, children’s education, and psychology.
+Rahmi is interested in people and how they grow, with curiosity about history, children’s education, and psychology.
 
-In her spare time, she enjoys reading and reflecting on these topics, often inspired by everyday family life.
-
-This website also serves as a place for her notes and reflections, kept personal and open-ended.
+In her spare time, she enjoys reading and reflecting on these topics, inspired by everyday family life.

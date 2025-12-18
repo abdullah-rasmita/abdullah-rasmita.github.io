@@ -2,6 +2,10 @@ title: Personal Site
 description: A shared personal website
 theme: minima
 
-# Show short previews of posts on the homepage.
 show_excerpts: true
 excerpt_separator: "<!--more-->"
+
+header_pages:
+  - index.md
+  - posts.md
+  - about.md
